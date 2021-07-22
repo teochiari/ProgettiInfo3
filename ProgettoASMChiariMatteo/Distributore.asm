@@ -47,8 +47,8 @@ definitions:
 			false
 		endif
 		
-	function isAcceptableDueCopie($latte in Integer) = 
-		if($latte=1) then
+	function isAcceptableDueCopie($dueCopie in Integer) = 
+		if($dueCopie=1) then
 			true
 		else
 			false

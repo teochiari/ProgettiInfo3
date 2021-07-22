@@ -1,21 +1,3 @@
-/*
- * 
- * una piccola applicazione usando Scala (con enfasi sui costrutti object oriented - 
- * ad esempio map e reduce potrebbero non esserci, ma classi e trait meglio che ci siano)
- * 
- * map ok
- * reduce 
- * classi ok
- * trait ok da rivedere 17
- * companion ok
- * 
- * Ereditarietà ok
- * classi astratte ok
- * traits ok
- * for foreach ok
- * filter map ok filters
- */
-
 import scala.collection.mutable.Queue
 import scala.collection.mutable.ListBuffer
 

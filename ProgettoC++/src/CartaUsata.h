@@ -6,5 +6,5 @@ public:
 	CartaFotografica carta;
 	CartaUsata();
 	CartaUsata(CartaFotografica c, int t);
-	//static CartaUsata* creaCartaUsata(CartaFotografica c, int t);
+
 };

@@ -1,6 +1,5 @@
 #include "CabinaFotografica.h"
 #import "CartaFotografica.h"
-//#include "CartaUsata.h"
 #include "Usata.h"
 #include <iostream>
 #include <string>
