@@ -102,7 +102,8 @@ void CabinaFotografica::stampaCartaUsata(){
 
 void CabinaFotografica::svuotaCartaUsata(){
 	if(cartaUsata.size()==0) {cout<<"Nessuna carta da svuotare"<<endl;}
-	for(int i=0; i<=cartaUsata.size(); i++){
+	int dim = cartaUsata.size();
+	for(int i=0; i<dim; i++){
 		cartaUsata.pop_back();
 	}
 	cout<<"Carta eliminata, dim cartaUsata: "<<cartaUsata.size()<<endl;
@@ -201,7 +202,7 @@ void CabinaFotografica::ricaricaCarta(int n){
 }
 void CabinaFotografica::greetings(){
 	//cout <<"dim pre svuotamento "<<cartaUsata.size()<<endl;
-	cout << "Tempo di utilizzo; " << tempo << endl;
+	cout << "Tempo di utilizzo: " << tempo << endl;
 	svuotaCartaUsata();
 	//stampaCartaUsata();
 	cout << "Uscita dalla cabina, grazie" << endl;
