@@ -1,0 +1,77 @@
+//// starting scenario
+scenario Distributore
+load Distributore.asm
+check currentState = START;
+step
+check currentState = INSERIRECREDITO;
+set inputInt := 1;
+step
+check currentState = CONTROLLACREDITO;
+check credito = 1;
+set inputInt := 1;
+step
+check currentState = INSERIRETIPOFOTO;
+check credito = 1;
+set inputInt := 1;
+set inputText := "Singol";
+step
+check currentState = CONTROLLATIPOFOTO;
+check credito = 1;
+check fotografia = "Singol";
+set inputInt := 1;
+set inputText := "Singol";
+step
+check currentState = INSERIRETIPOFOTO;
+check credito = 1;
+check fotografia = "Singol";
+set inputInt := 1;
+set inputText := "Singola";
+step
+check currentState = CONTROLLATIPOFOTO;
+check credito = 1;
+check fotografia = "Singola";
+set inputInt := 1;
+set inputText := "Singola";
+step
+check currentState = INSERIREFILTRO;
+check credito = 1;
+check fotografia = "Singola";
+set inputInt := 1;
+set inputText := "Singola";
+step
+check currentState = CONTROLLAFILTRO;
+check credito = 1;
+check fotografia = "Singola";
+check filtro = 1;
+set inputInt := 1;
+set inputText := "Singola";
+step
+check currentState = AGGIUNGIDUECOPIE;
+check credito = 1;
+check fotografia = "Singola";
+check filtro = 1;
+set inputInt := 1;
+set inputText := "Singola";
+step
+check currentState = CONTROLLADUECOPIE;
+check credito = 1;
+check fotografia = "Singola";
+check filtro = 1;
+check dueCopie = 1;
+set inputInt := 1;
+set inputText := "Singola";
+step
+check currentState = START;
+check credito = 1;
+check fotografia = "Singola";
+check filtro = 1;
+check dueCopie = 1;
+set inputInt := 1;
+set inputText := "Singola";
+step
+check currentState = INSERIRECREDITO;
+check credito = 1;
+check fotografia = "Singola";
+check filtro = 1;
+check dueCopie = 1;
+step
