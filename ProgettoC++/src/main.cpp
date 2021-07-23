@@ -5,5 +5,6 @@ using namespace std;
 int main() {
 	CabinaFotografica* cabina = CabinaFotografica::creaCabinaFotografica();
 	cabina->show();
+	cabina->~CabinaFotografica();
 	return 0;
 }
